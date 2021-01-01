@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>example</title>
+  </head>
+  <body>
+    <p>example</p>
+
+    <script type="module">
+      import * as util from "../src/index.js";
+      console.log(util);
+
+    //   obj
+      console.log(
+        util.obj({
+          name: "xx",
+          sing: function () {
+            console.log("啊啊啊");
+          },
+        })
+      );
+
+      // FastCache 缓存
+      var FC = util.FastCache;
+      var cache = new FC();
+      cache.set("a", 100);
+      cache.set("b", "abcd-b");
+      console.log(cache.get("a"));
+      console.log(cache.all());
+    </script>
+  </body>
+</html>
