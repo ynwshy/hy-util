@@ -1,6 +1,6 @@
 {
   "name": "hy-util",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "js util 常用的工具方法",
   "main": "src/index.js",
   "scripts": {
