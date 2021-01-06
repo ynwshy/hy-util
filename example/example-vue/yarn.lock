@@ -4713,10 +4713,10 @@ human-signals@^1.1.1:
   resolved "https://registry.npm.taobao.org/human-signals/download/human-signals-1.1.1.tgz#c5b1cd14f50aeae09ab6c59fe63ba3395fe4dfa3"
   integrity sha1-xbHNFPUK6uCatsWf5jujOV/k36M=
 
-hy-util@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/hy-util/-/hy-util-0.0.1.tgz#61d7aa120a306a13828c94cb06051c97a05f326f"
-  integrity sha512-ML/7dRQWPaYzVkP+nlRzS4KCAzZMx0BGyCZdtH6vSNB8EyLhqV/U6D0cziLdnhBEiLl3MITYu/vWu+i+TTU0Tw==
+hy-util@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/hy-util/-/hy-util-0.0.3.tgz#3dce6d51bfb37cebb613e202ae1ee86c4fbb109d"
+  integrity sha512-iPggEc663Cq/OEPC6z5PQjZBFWCr+D3gHU543A25F9iEs7j/xPkNNFX4nwzFKkuaZCheFBjEwwcS6I/KD8CgQg==
 
 iconv-lite@0.4.24, iconv-lite@^0.4.24:
   version "0.4.24"

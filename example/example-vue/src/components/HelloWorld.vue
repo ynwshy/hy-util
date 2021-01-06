@@ -57,7 +57,8 @@ export default {
       },
     };
     console.log(u.trim(obj));
-    console.log(u.trim(obj), "undefined");
+    console.log(u.trim(obj, "_undefined"));
+    console.log(u.obj(u.trim(obj, "_undefined")));
   },
 };
 </script>
