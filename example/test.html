@@ -3,17 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <title>example</title>
+    <!-- <script src="../release/bundle.js"></script> -->
   </head>
   <body>
     <p>example</p>
 
     <script type="module">
-      import * as util from "../src/index.js";
-      console.log(util);
+      import * as u from "../src/index.js";
+      // import * as u from "../release/bundle.js";
+      console.log(u);
 
-    //   obj
+      //   obj
       console.log(
-        util.obj({
+        u.obj({
           name: "xx",
           sing: function () {
             console.log("啊啊啊");
@@ -22,12 +24,53 @@
       );
 
       // FastCache 缓存
-      var FC = util.FastCache;
+      var FC = u.FastCache;
       var cache = new FC();
       cache.set("a", 100);
       cache.set("b", "abcd-b");
       console.log(cache.get("a"));
       console.log(cache.all());
+
+      let obj = {
+        a: "",
+        b: "b",
+        c: "   ",
+        d: "  d  ",
+        e: null,
+        f: undefined,
+        g: 123,
+        h: {
+          aa: "",
+          bb: "b",
+          cb: "   ",
+          dd: "  dd  ",
+          ee: null,
+          ff: undefined,
+          gg: 123,
+          hh: {
+            hha: "",
+            hhb: "b",
+            hhc: "   ",
+            hhd: "  d  ",
+            hhe: null,
+            hhf: undefined,
+            hhg: 123,
+            hhh: {
+              hhaa: "",
+              hhbb: "b",
+              hhcb: "   ",
+              hhdd: "  dd  ",
+              hhee: null,
+              hhff: undefined,
+              hhgg: 123,
+            },
+          },
+        },
+      };
+      // console.log(u.trim(obj));
+      let trimObj = u.trim(obj, "_undefined");
+      console.log(trimObj);
+      console.log(u.obj(trimObj));
     </script>
   </body>
 </html>

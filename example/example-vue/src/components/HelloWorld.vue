@@ -19,6 +19,45 @@ export default {
     console.log(this.test);
     console.log(u.obj(this.test));
     console.log(this.u.obj(this.test));
+
+    let obj = {
+      a: "",
+      b: "b",
+      c: "   ",
+      d: "  d  ",
+      e: null,
+      f: undefined,
+      g: 123,
+      h: {
+        aa: "",
+        bb: "b",
+        cb: "   ",
+        dd: "  dd  ",
+        ee: null,
+        ff: undefined,
+        gg: 123,
+        hh: {
+          hha: "",
+          hhb: "b",
+          hhc: "   ",
+          hhd: "  d  ",
+          hhe: null,
+          hhf: undefined,
+          hhg: 123,
+          hhh: {
+            hhaa: "",
+            hhbb: "b",
+            hhcb: "   ",
+            hhdd: "  dd  ",
+            hhee: null,
+            hhff: undefined,
+            hhgg: 123,
+          },
+        },
+      },
+    };
+    console.log(u.trim(obj));
+    console.log(u.trim(obj), "undefined");
   },
 };
 </script>

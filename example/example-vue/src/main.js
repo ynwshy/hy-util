@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 import * as u from 'hy-util'
 
-// console.log(u);
+console.log(u);
 window.u = u
 Vue.prototype.u = u
 

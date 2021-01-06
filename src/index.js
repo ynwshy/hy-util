@@ -7,6 +7,8 @@
  * @FilePath: \hy-js-util\src\index.js
  */
 
+ console.warn("hy-util.js");
+
 /**
  * @description: FastCache 缓存类
  */
@@ -38,28 +40,17 @@ export function obj(obj = {}) {
 }
 
 //  对象 去两边空的
-// {a:'',b:'b',c:'   ',d:'  d  ',e:null,f:undefined,g:123,h:{aa:'',bb:'b',cb:'   ',dd:'  dd  ',ee:null,ff:undefined,gg:123,hh:{a:'',b:'b',c:'   ',d:'  d  ',e:null,f:undefined,g:123,h:{aa:'',bb:'b',cb:'   ',dd:'  dd  ',ee:null,ff:undefined,gg:123}}}}
 export function trim(str, defaultRturn) {
-  // console.log(str);
   if (typeof str == "string") {
-    // 如果需要返回 undefined null
-    // this.trim(name,'null') this.trim(name,'undefined')
     str = str.trim();
-    // console.log(str, defaultRturn);
-    if (str.length == 0 && defaultRturn == "undefined") return undefined;
-    if (str.length == 0 && defaultRturn == "null") return null;
+    if (str.length == 0 && defaultRturn == "_undefined") return undefined;
+    if (str.length == 0 && defaultRturn == "_null") return null;
     return str;
   }
   if (typeof str == "object") {
     let ob = obj(str);
     for (const o in ob) {
-      console.log(o, "---");
       ob[o] = trim(ob[o], defaultRturn);
-      // if (typeof ob[o] == 'string') {
-      //     // if (defaultRturn == 'undefined') return undefined;
-      //     // if (defaultRturn == 'null') return null;
-      //     ob[o] = ob[o].trim();
-      // }
     }
     return ob;
   }
