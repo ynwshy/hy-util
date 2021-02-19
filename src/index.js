@@ -103,6 +103,7 @@ export function splitStr(str = "") {
 }
 
 // 日期格式化
+// parseTime("2021-01-22 00:00:00", '{y}-{m}-{d} {h}:{i}:{s} 周{a}')
 export function parseTime(time, pattern) {
   if (arguments.length === 0 || !time) {
     return null;
