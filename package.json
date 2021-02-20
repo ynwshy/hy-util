@@ -1,6 +1,6 @@
 {
   "name": "hy-util",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "js util 常用的工具方法",
   "main": "src/index.js",
   "scripts": {
@@ -21,9 +21,6 @@
     "url": "https://github.com/ynwshy/hy-util/issues"
   },
   "homepage": "https://github.com/ynwshy/hy-util#readme",
-  "dependencies": {
-    "dayjs": "1.10.0"
-  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
